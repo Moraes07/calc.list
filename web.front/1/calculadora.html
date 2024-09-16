@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Média Final</h1>
+        <form id="mediaForm">
+            <label for="ac1">Nota AC1:</label>
+            <input type="number" id="ac1" name="ac1" min="0" max="10" required>
+
+            <label for="ac2">Nota AC2:</label>
+            <input type="number" id="ac2" name="ac2" min="0" max="10" required>
+
+            <label for="ag">Nota AG:</label>
+            <input type="number" id="ag" name="ag" min="0" max="10" required>
+
+            <label for="af">Nota AF:</label>
+            <input type="number" id="af" name="af" min="0" max="10" required>
+
+            <button type="button" onclick="calcularMedia()">Calcular</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

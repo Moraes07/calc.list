@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apólice de Seguro Automobilístico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Apólice de Seguro</h1>
+        <form id="seguroForm">
+            <label for="nome">Nome do Segurado:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required min="18">
+
+            <label for="valorAutomovel">Valor do Automóvel:</label>
+            <input type="number" id="valorAutomovel" name="valorAutomovel" required min="1">
+
+            <button type="button" onclick="calcularApolice()">Calcular Apólice</button>
+        </form>
+
+        <h2>Valor da Apólice: R$ <span id="resultado">0.00</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
